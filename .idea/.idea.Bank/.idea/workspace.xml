@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="029b01eb-37c4-4768-a31c-325638cf5be1" name="Default Changelist" comment="" />
+    <list default="true" id="029b01eb-37c4-4768-a31c-325638cf5be1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Bank/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bank/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bank.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Bank.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bank/BankAccount.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/BankAccount.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bank/Transaction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/Transaction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bank/bin/Debug/netcoreapp2.2/Bank.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/bin/Debug/netcoreapp2.2/Bank.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bank/bin/Debug/netcoreapp2.2/Bank.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/bin/Debug/netcoreapp2.2/Bank.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bank/obj/Debug/netcoreapp2.2/Bank.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/obj/Debug/netcoreapp2.2/Bank.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bank/obj/Debug/netcoreapp2.2/Bank.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/obj/Debug/netcoreapp2.2/Bank.pdb" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +22,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Bank/Program.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+            <state relative-caret-position="150">
+              <caret line="10" column="32" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="32" />
               <folding>
                 <marker date="1566949585419" expanded="true" signature="29:463" ph="{...}" />
                 <marker date="1566949585419" expanded="true" signature="49:461" ph="{...}" />
@@ -27,17 +36,41 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Bank/BankAccount.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="516">
-              <caret line="52" column="36" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
+            <state relative-caret-position="127">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
               <folding>
-                <marker date="1566955317006" expanded="true" signature="6:78" ph="..." />
-                <marker date="1566955317006" expanded="true" signature="94:2140" ph="{...}" />
-                <marker date="1566955317006" expanded="true" signature="125:2138" ph="{...}" />
-                <marker date="1566955317006" expanded="true" signature="501:1129" ph="{...}" />
-                <marker date="1566955317006" expanded="true" signature="794:977" ph="{...}" />
-                <marker date="1566955317006" expanded="true" signature="1018:1119" ph="{...}" />
-                <marker date="1566955317006" expanded="true" signature="1176:2132" ph="{...}" />
-                <marker date="1566955317006" expanded="true" signature="2018:2086" ph="{...}" />
+                <marker date="1566963682174" expanded="true" signature="6:78" ph="..." />
+                <marker date="1566963682174" expanded="true" signature="94:2614" ph="{...}" />
+                <marker date="1566963682174" expanded="true" signature="125:2612" ph="{...}" />
+                <marker date="1566963682174" expanded="true" signature="290:558" ph="{...}" />
+                <marker date="1566963682174" expanded="true" signature="307:548" ph="{...}" />
+                <marker date="1566963682174" expanded="true" signature="418:503" ph="{...}" />
+                <marker date="1566963682174" expanded="true" signature="753:1371" ph="{...}" />
+                <marker date="1566963682174" expanded="true" signature="799:912" ph="{...}" />
+                <marker date="1566963682174" expanded="true" signature="1146:1307" ph="/* Transaction initialTransaction = new Transaction(TransactionType.Deposit, initialDeposit, CreatedDate, &quot;&quot;); ... */" />
+                <marker date="1566963682174" expanded="true" signature="1418:2384" ph="{...}" />
+                <marker date="1566963682174" expanded="true" signature="2253:2338" ph="{...}" />
+                <marker date="1566963682174" expanded="true" signature="2444:2606" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BankTest/BankAccountTest.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="637">
+              <caret line="57" column="41" lean-forward="true" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
+              <folding>
+                <marker date="1566962668188" expanded="true" signature="6:48" ph="..." />
+                <marker date="1566962668188" expanded="true" signature="66:1509" ph="{...}" />
+                <marker date="1566962668188" expanded="true" signature="101:1507" ph="{...}" />
+                <marker date="1566962668188" expanded="true" signature="192:326" ph="{...}" />
+                <marker date="1566962668188" expanded="true" signature="385:468" ph="{...}" />
+                <marker date="1566962668188" expanded="true" signature="529:647" ph="{...}" />
+                <marker date="1566962668188" expanded="true" signature="724:889" ph="{...}" />
+                <marker date="1566962668188" expanded="true" signature="967:1239" ph="{...}" />
+                <marker date="1566962668188" expanded="true" signature="1292:1501" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -46,13 +79,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Bank/Transaction.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+            <state relative-caret-position="345">
+              <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
               <folding>
-                <marker date="1566889319746" expanded="true" signature="29:757" ph="{...}" />
-                <marker date="1566889319746" expanded="true" signature="60:656" ph="{...}" />
-                <marker date="1566889319746" expanded="true" signature="417:641" ph="{...}" />
-                <marker date="1566889319746" expanded="true" signature="689:755" ph="{...}" />
+                <marker date="1566963122904" expanded="true" signature="29:708" ph="{...}" />
+                <marker date="1566963122904" expanded="true" signature="60:607" ph="{...}" />
+                <marker date="1566963122904" expanded="true" signature="390:592" ph="{...}" />
+                <marker date="1566963122904" expanded="true" signature="640:706" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -74,30 +107,44 @@
       </file>
     </leaf>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Bank/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Bank/BankAccount.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Bank/Person.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Bank/Transaction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BankTest/BankAccountTest.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Bank/Owner.cs" />
         <option value="$PROJECT_DIR$/Bank/TransactionList.cs" />
-        <option value="$PROJECT_DIR$/Bank/Transaction.cs" />
         <option value="$PROJECT_DIR$/Bank/Person.cs" />
         <option value="$PROJECT_DIR$/Bank/Program.cs" />
+        <option value="$PROJECT_DIR$/BankTest/UnitTest1.cs" />
+        <option value="$PROJECT_DIR$/BankTest/BankAccountTest.cs" />
+        <option value="$PROJECT_DIR$/Bank/Transaction.cs" />
         <option value="$PROJECT_DIR$/Bank/BankAccount.cs" />
       </list>
     </option>
   </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/.idea.Bank/.idea/vcs.xml" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-851" />
+    <option name="x" value="-747" />
     <option name="y" value="-1417" />
-    <option name="width" value="1813" />
+    <option name="width" value="1973" />
     <option name="height" value="1337" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="SolutionExplorer" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -114,6 +161,11 @@
               <item name="" type="784c90a0:SolutionExplorerRootNode" />
               <item name="Bank" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Bank" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Bank" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="BankTest" type="24d0babc:SolutionExplorerModelNode" />
             </path>
           </expand>
           <select />
@@ -143,7 +195,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected=".NET Project.Default">
     <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/Bank/bin/Debug/netcoreapp2.2/Bank.dll" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -173,12 +225,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1566883195133</updated>
-      <workItem from="1566883196963" duration="9798000" />
+      <workItem from="1566883196963" duration="17043000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9798000" />
+    <option name="totallyTimeSpent" value="17043000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -190,23 +242,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-851" y="-1417" width="1813" height="1337" extended-state="0" />
+    <frame x="78" y="-1417" width="2505" height="1337" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23094296" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.16605765" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="NuGet" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Unit Tests" />
+      <window_info active="true" anchor="bottom" id="Unit Tests" visible="true" weight="0.32931727" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Build" weight="0.32931727" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32931727" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32931727" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -218,6 +270,32 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.16605765" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="NuGet" order="0" />
+      <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unit Tests" order="2" visible="true" weight="0.32931727" />
+      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="5" />
+      <window_info anchor="bottom" id="Version Control" order="6" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.32931727" />
+      <window_info anchor="bottom" id="Message" order="8" />
+      <window_info anchor="bottom" id="Find" order="9" />
+      <window_info anchor="bottom" id="Run" order="10" weight="0.32931727" />
+      <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="14" />
+      <window_info anchor="right" id="Errors In Solution" order="0" />
+      <window_info anchor="right" id="Database" order="1" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="2" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="3" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="4" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="5" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -231,49 +309,22 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Bank/Person.cs</url>
-          <line>6</line>
-          <properties documentPath="$PROJECT_DIR$/Bank/Person.cs" initialLine="6">
-            <startOffsets>
-              <option value="147" />
-            </startOffsets>
-            <endOffsets>
-              <option value="151" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Bank/BankAccount.cs</url>
-          <line>31</line>
-          <properties documentPath="$PROJECT_DIR$/Bank/BankAccount.cs" initialLine="31">
-            <startOffsets>
-              <option value="867" />
-            </startOffsets>
-            <endOffsets>
-              <option value="963" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Bank/BankAccount.cs</url>
-          <line>52</line>
-          <properties documentPath="$PROJECT_DIR$/Bank/BankAccount.cs" initialLine="52">
-            <startOffsets>
-              <option value="2049" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2072" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Bank/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="32" />
+          <folding>
+            <marker date="1566949585419" expanded="true" signature="29:463" ph="{...}" />
+            <marker date="1566949585419" expanded="true" signature="49:461" ph="{...}" />
+            <marker date="1566949585419" expanded="true" signature="95:455" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Bank/Person.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -288,42 +339,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Bank/Transaction.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+        <state relative-caret-position="345">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding>
-            <marker date="1566889319746" expanded="true" signature="29:757" ph="{...}" />
-            <marker date="1566889319746" expanded="true" signature="60:656" ph="{...}" />
-            <marker date="1566889319746" expanded="true" signature="417:641" ph="{...}" />
-            <marker date="1566889319746" expanded="true" signature="689:755" ph="{...}" />
+            <marker date="1566963122904" expanded="true" signature="29:708" ph="{...}" />
+            <marker date="1566963122904" expanded="true" signature="60:607" ph="{...}" />
+            <marker date="1566963122904" expanded="true" signature="390:592" ph="{...}" />
+            <marker date="1566963122904" expanded="true" signature="640:706" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Bank/Program.cs">
+    <entry file="file://$PROJECT_DIR$/BankTest/BankAccountTest.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        <state relative-caret-position="637">
+          <caret line="57" column="41" lean-forward="true" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
           <folding>
-            <marker date="1566949585419" expanded="true" signature="29:463" ph="{...}" />
-            <marker date="1566949585419" expanded="true" signature="49:461" ph="{...}" />
-            <marker date="1566949585419" expanded="true" signature="95:455" ph="{...}" />
+            <marker date="1566962668188" expanded="true" signature="6:48" ph="..." />
+            <marker date="1566962668188" expanded="true" signature="66:1509" ph="{...}" />
+            <marker date="1566962668188" expanded="true" signature="101:1507" ph="{...}" />
+            <marker date="1566962668188" expanded="true" signature="192:326" ph="{...}" />
+            <marker date="1566962668188" expanded="true" signature="385:468" ph="{...}" />
+            <marker date="1566962668188" expanded="true" signature="529:647" ph="{...}" />
+            <marker date="1566962668188" expanded="true" signature="724:889" ph="{...}" />
+            <marker date="1566962668188" expanded="true" signature="967:1239" ph="{...}" />
+            <marker date="1566962668188" expanded="true" signature="1292:1501" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Bank/BankAccount.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="52" column="36" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
+        <state relative-caret-position="127">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
           <folding>
-            <marker date="1566955317006" expanded="true" signature="6:78" ph="..." />
-            <marker date="1566955317006" expanded="true" signature="94:2140" ph="{...}" />
-            <marker date="1566955317006" expanded="true" signature="125:2138" ph="{...}" />
-            <marker date="1566955317006" expanded="true" signature="501:1129" ph="{...}" />
-            <marker date="1566955317006" expanded="true" signature="794:977" ph="{...}" />
-            <marker date="1566955317006" expanded="true" signature="1018:1119" ph="{...}" />
-            <marker date="1566955317006" expanded="true" signature="1176:2132" ph="{...}" />
-            <marker date="1566955317006" expanded="true" signature="2018:2086" ph="{...}" />
+            <marker date="1566963682174" expanded="true" signature="6:78" ph="..." />
+            <marker date="1566963682174" expanded="true" signature="94:2614" ph="{...}" />
+            <marker date="1566963682174" expanded="true" signature="125:2612" ph="{...}" />
+            <marker date="1566963682174" expanded="true" signature="290:558" ph="{...}" />
+            <marker date="1566963682174" expanded="true" signature="307:548" ph="{...}" />
+            <marker date="1566963682174" expanded="true" signature="418:503" ph="{...}" />
+            <marker date="1566963682174" expanded="true" signature="753:1371" ph="{...}" />
+            <marker date="1566963682174" expanded="true" signature="799:912" ph="{...}" />
+            <marker date="1566963682174" expanded="true" signature="1146:1307" ph="/* Transaction initialTransaction = new Transaction(TransactionType.Deposit, initialDeposit, CreatedDate, &quot;&quot;); ... */" />
+            <marker date="1566963682174" expanded="true" signature="1418:2384" ph="{...}" />
+            <marker date="1566963682174" expanded="true" signature="2253:2338" ph="{...}" />
+            <marker date="1566963682174" expanded="true" signature="2444:2606" ph="{...}" />
           </folding>
         </state>
       </provider>

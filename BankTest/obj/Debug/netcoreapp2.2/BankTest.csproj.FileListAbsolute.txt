@@ -1,0 +1,17 @@
+/Users/helena.franczak/RiderProjects/Bank/BankTest/bin/Debug/netcoreapp2.2/NUnit3.TestAdapter.dll
+/Users/helena.franczak/RiderProjects/Bank/BankTest/bin/Debug/netcoreapp2.2/NUnit3.TestAdapter.pdb
+/Users/helena.franczak/RiderProjects/Bank/BankTest/bin/Debug/netcoreapp2.2/nunit.engine.netstandard.dll
+/Users/helena.franczak/RiderProjects/Bank/BankTest/bin/Debug/netcoreapp2.2/BankTest.deps.json
+/Users/helena.franczak/RiderProjects/Bank/BankTest/bin/Debug/netcoreapp2.2/BankTest.runtimeconfig.json
+/Users/helena.franczak/RiderProjects/Bank/BankTest/bin/Debug/netcoreapp2.2/BankTest.runtimeconfig.dev.json
+/Users/helena.franczak/RiderProjects/Bank/BankTest/bin/Debug/netcoreapp2.2/BankTest.dll
+/Users/helena.franczak/RiderProjects/Bank/BankTest/bin/Debug/netcoreapp2.2/BankTest.pdb
+/Users/helena.franczak/RiderProjects/Bank/BankTest/bin/Debug/netcoreapp2.2/Bank.dll
+/Users/helena.franczak/RiderProjects/Bank/BankTest/bin/Debug/netcoreapp2.2/Bank.pdb
+/Users/helena.franczak/RiderProjects/Bank/BankTest/obj/Debug/netcoreapp2.2/BankTest.csprojAssemblyReference.cache
+/Users/helena.franczak/RiderProjects/Bank/BankTest/obj/Debug/netcoreapp2.2/BankTest.csproj.CoreCompileInputs.cache
+/Users/helena.franczak/RiderProjects/Bank/BankTest/obj/Debug/netcoreapp2.2/BankTest.AssemblyInfoInputs.cache
+/Users/helena.franczak/RiderProjects/Bank/BankTest/obj/Debug/netcoreapp2.2/BankTest.AssemblyInfo.cs
+/Users/helena.franczak/RiderProjects/Bank/BankTest/obj/Debug/netcoreapp2.2/BankTest.csproj.CopyComplete
+/Users/helena.franczak/RiderProjects/Bank/BankTest/obj/Debug/netcoreapp2.2/BankTest.dll
+/Users/helena.franczak/RiderProjects/Bank/BankTest/obj/Debug/netcoreapp2.2/BankTest.pdb

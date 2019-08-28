@@ -10,31 +10,40 @@ namespace Bank
         public string AccountNumber { get; }
 
         public DateTime CreatedDate { get; }
-        public int Balance { get; }
-        
+        public int Balance {
+            get
+            {
+                var total = 0;
+                foreach (Transaction transaction in Transactions)
+                {
+                    total += transaction.Amount;
+                }
+
+                return total;
+            }
+        }
+
+
         public Person Owner { get; }
 
         public List<Transaction> Transactions { get;}
 
         public BankAccount(string bankName, string accountNumber, int initialDeposit, Person owner)
         {
+            if (initialDeposit < 0)
+            {
+                throw new Exception("Cant make an account with a negative deposit");
+            }
             
             Owner = owner;
             CreatedDate = DateTime.Now;
             BankName = bankName;
             AccountNumber = accountNumber;
-            Balance = initialDeposit;
             Transactions = new List<Transaction>();
-
-            if (initialDeposit > 0)
-            {
-                Balance = initialDeposit;
-                Transactions.Add(new Transaction(TransactionType.Deposit , initialDeposit, DateTime.Now, null));
-            }
-            else if (initialDeposit < 0)
-            {
-                throw new Exception("cant have minus balance at start");
-            }
+            
+            //Transaction initialTransaction = new Transaction(TransactionType.Deposit, initialDeposit, CreatedDate, "");
+            //Transactions.Add(initialTransaction);
+            MakeDeposit(initialDeposit, CreatedDate);
         }
 
         public string GenerateBankStatement()
@@ -48,13 +57,19 @@ namespace Bank
                                    "Client's Email: " + Owner.Email + Environment.NewLine +
                                    "Balance: " + Balance + Environment.NewLine +
                                    "transactions: " + Transactions;
-            foreach (var transaction in Transactions)
+            foreach (var item in Transactions)
             {
-                bankStatement += transaction;
+                //Balance += item.AmountTransffered; //?
             }
 
 
             return bankStatement;
+        }
+
+        public void MakeDeposit(int amount, DateTime time)
+        {
+            Transaction transaction = new Transaction(TransactionType.Deposit, amount, time, "" );
+            Transactions.Add(transaction);
         }
     }
 }

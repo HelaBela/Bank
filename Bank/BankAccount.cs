@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq.Expressions;
 
 namespace Bank
@@ -40,10 +41,11 @@ namespace Bank
             BankName = bankName;
             AccountNumber = accountNumber;
             Transactions = new List<Transaction>();
-            
-            //Transaction initialTransaction = new Transaction(TransactionType.Deposit, initialDeposit, CreatedDate, "");
-            //Transactions.Add(initialTransaction);
-            MakeDeposit(initialDeposit, CreatedDate);
+
+            if (initialDeposit > 0)
+            {
+                MakeDeposit(initialDeposit, CreatedDate, "inital deposit");
+            }
         }
 
         public string GenerateBankStatement()
@@ -55,21 +57,47 @@ namespace Bank
                                    "Client's Address:" + Owner.Address + Environment.NewLine +
                                    "Client's Age:" + Owner.Age + Environment.NewLine +
                                    "Client's Email: " + Owner.Email + Environment.NewLine +
-                                   "Balance: " + Balance + Environment.NewLine +
-                                   "transactions: " + Transactions;
-            foreach (var item in Transactions)
+                                   "Balance: $" + Balance + Environment.NewLine +
+                                   "transactions: " + Environment.NewLine;
+            
+            foreach (Transaction transaction in Transactions)
             {
-                //Balance += item.AmountTransffered; //?
+                bankStatement += transaction.TransactionDate.ToString(CultureInfo.InvariantCulture) + " $" +
+                                 transaction.Amount + " " + transaction.Note + " " + transaction.ExternalAccountNumber +
+                                 Environment.NewLine;
             }
 
 
             return bankStatement;
         }
 
-        public void MakeDeposit(int amount, DateTime time)
+        public void MakeDeposit(int amount, DateTime time, string note)
         {
-            Transaction transaction = new Transaction(TransactionType.Deposit, amount, time, "" );
-            Transactions.Add(transaction);
+            Transaction deposit = new Transaction(TransactionType.Deposit, amount, time, "" , note);
+            Transactions.Add(deposit);
         }
+        
+        public void MakeWithdrawal(int amount, DateTime time, string note)
+        {
+            amount *= -1;
+            Transaction withdrawal = new Transaction(TransactionType.Withdrawal, amount, time, "", note );
+            Transactions.Add(withdrawal);
+        }
+
+        public void TransferMoney(int amount, BankAccount destinationBankAcc,  DateTime time, string note)
+        {
+            if ( amount > Balance)
+            {
+               throw new Exception("not enough money on the account");
+            }
+
+            
+            Transaction source = new Transaction(TransactionType.Transfer, amount * -1, time, destinationBankAcc.AccountNumber, note);
+            Transactions.Add(source);
+            
+            Transaction destination = new Transaction(TransactionType.Transfer, amount, time, AccountNumber, note);
+            destinationBankAcc.Transactions.Add(destination);
+        }
+        
     }
 }

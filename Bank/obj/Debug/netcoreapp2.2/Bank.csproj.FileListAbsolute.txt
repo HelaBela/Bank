@@ -1,0 +1,11 @@
+/Users/helena.franczak/RiderProjects/Bank/Bank/bin/Debug/netcoreapp2.2/Bank.deps.json
+/Users/helena.franczak/RiderProjects/Bank/Bank/bin/Debug/netcoreapp2.2/Bank.runtimeconfig.json
+/Users/helena.franczak/RiderProjects/Bank/Bank/bin/Debug/netcoreapp2.2/Bank.runtimeconfig.dev.json
+/Users/helena.franczak/RiderProjects/Bank/Bank/bin/Debug/netcoreapp2.2/Bank.dll
+/Users/helena.franczak/RiderProjects/Bank/Bank/bin/Debug/netcoreapp2.2/Bank.pdb
+/Users/helena.franczak/RiderProjects/Bank/Bank/obj/Debug/netcoreapp2.2/Bank.csprojAssemblyReference.cache
+/Users/helena.franczak/RiderProjects/Bank/Bank/obj/Debug/netcoreapp2.2/Bank.csproj.CoreCompileInputs.cache
+/Users/helena.franczak/RiderProjects/Bank/Bank/obj/Debug/netcoreapp2.2/Bank.AssemblyInfoInputs.cache
+/Users/helena.franczak/RiderProjects/Bank/Bank/obj/Debug/netcoreapp2.2/Bank.AssemblyInfo.cs
+/Users/helena.franczak/RiderProjects/Bank/Bank/obj/Debug/netcoreapp2.2/Bank.dll
+/Users/helena.franczak/RiderProjects/Bank/Bank/obj/Debug/netcoreapp2.2/Bank.pdb

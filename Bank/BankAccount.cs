@@ -27,7 +27,7 @@ namespace Bank
 
         public Person Owner { get; }
 
-        public List<Transaction> Transactions { get;}
+        private List<Transaction> Transactions;
 
         public BankAccount(string bankName, string accountNumber, int initialDeposit, Person owner)
         {
@@ -44,21 +44,21 @@ namespace Bank
 
             if (initialDeposit > 0)
             {
-                MakeDeposit(initialDeposit, CreatedDate, "inital deposit");
+                MakeTransaction(initialDeposit, CreatedDate, "inital deposit");
             }
         }
 
         public string GenerateBankStatement()
         {
             string bankStatement = "Bank Name: " + BankName + Environment.NewLine +
-                                   "Account number:" + AccountNumber + Environment.NewLine +
-                                   "Created Date:" + CreatedDate + Environment.NewLine +
-                                   "Client's name:" + Owner.Name + Environment.NewLine +
-                                   "Client's Address:" + Owner.Address + Environment.NewLine +
-                                   "Client's Age:" + Owner.Age + Environment.NewLine +
+                                   "Account number: " + AccountNumber + Environment.NewLine +
+                                   "Created Date: " + CreatedDate + Environment.NewLine +
+                                   "Client's name: " + Owner.Name + Environment.NewLine +
+                                   "Client's Address: " + Owner.Address + Environment.NewLine +
+                                   "Client's Age: " + Owner.Age + Environment.NewLine +
                                    "Client's Email: " + Owner.Email + Environment.NewLine +
                                    "Balance: $" + Balance + Environment.NewLine +
-                                   "transactions: " + Environment.NewLine;
+                                   "Transactions: " + Environment.NewLine;
             
             foreach (Transaction transaction in Transactions)
             {
@@ -71,33 +71,56 @@ namespace Bank
             return bankStatement;
         }
 
-        public void MakeDeposit(int amount, DateTime time, string note)
+        public void MakeTransaction(int amount, DateTime time, string note, BankAccount externalBankAcc = null)
         {
-            Transaction deposit = new Transaction(TransactionType.Deposit, amount, time, "" , note);
-            Transactions.Add(deposit);
+            if (externalBankAcc != null)
+            {
+                MakeTransfer(amount, time, note, externalBankAcc);
+            }
+            else
+            {
+                if (amount < 0)
+                {
+                    MakeWithdrawl(amount, time, note);
+                }
+                else
+                {
+                    MakeDeposit(amount, time, note);
+                }
+            }
+            
         }
         
-        public void MakeWithdrawal(int amount, DateTime time, string note)
+        private void MakeDeposit(int amount, DateTime time, string note)
         {
-            amount *= -1;
-            Transaction withdrawal = new Transaction(TransactionType.Withdrawal, amount, time, "", note );
-            Transactions.Add(withdrawal);
-        }
 
-        public void TransferMoney(int amount, BankAccount destinationBankAcc,  DateTime time, string note)
+            Transaction transaction = new Transaction(TransactionType.Deposit, amount, time, "", note);
+            Transactions.Add(transaction);
+        }
+        
+        private void MakeWithdrawl(int amount, DateTime time, string note)
         {
-            if ( amount > Balance)
+            TransactionType transactionType;
+            if (amount * -1 > Balance)
             {
-               throw new Exception("not enough money on the account");
+                throw new Exception("not enough money on the account to withdraw");
             }
 
-            
-            Transaction source = new Transaction(TransactionType.Transfer, amount * -1, time, destinationBankAcc.AccountNumber, note);
-            Transactions.Add(source);
-            
-            Transaction destination = new Transaction(TransactionType.Transfer, amount, time, AccountNumber, note);
-            destinationBankAcc.Transactions.Add(destination);
+            Transaction transaction = new Transaction(TransactionType.Withdrawal, amount, time, "", note);
+            Transactions.Add(transaction);
         }
-        
+
+        private void MakeTransfer(int amount, DateTime time, string note, BankAccount externalBankAcc)
+        {
+            if (amount > Balance)
+            {
+                throw new Exception("not enough money on the account to transfer");
+            }
+
+            Transaction transaction =
+                new Transaction(TransactionType.Transfer, amount * -1, time, externalBankAcc.AccountNumber, note);
+            Transactions.Add(transaction);
+            externalBankAcc.MakeTransaction(amount, time, note);
+        }
     }
 }

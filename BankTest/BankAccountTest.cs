@@ -53,7 +53,7 @@ namespace Tests
         [Test]
         public void CanMakeDeposit()
         {
-            testAccount.MakeDeposit(10, DateTime.Now, "");
+            testAccount.MakeTransaction(10, DateTime.Now, "");
             
             var balance = testAccount.Balance; //act
             
@@ -64,7 +64,7 @@ namespace Tests
         [Test]
         public void CanMakeWithdrawal()
         {
-            testAccount.MakeWithdrawal(10, DateTime.Now, "");
+            testAccount.MakeTransaction(-10, DateTime.Now, "");
             
             var balance = testAccount.Balance; //act
             
@@ -74,20 +74,20 @@ namespace Tests
         
           
         [Test]
-        public void CanMakeTransfer()
+        public void CanMakeTransferAndUpdateSourceBalance()
         {
-            testAccount.TransferMoney(40, testAccount2, DateTime.Now, ""  );
+            testAccount.MakeTransaction(40, DateTime.Now, "" , testAccount2 );
             
             var balance = testAccount.Balance; //act
-            
-            Assert.AreEqual(9, balance);
-            
+
+            Assert.AreEqual(9, balance); 
+
         }
         
         [Test]
-        public void CanMakeTransfer2()
+        public void CanMakeTransferAndUpdateTheReceiverBalance()
         {
-            testAccount.TransferMoney(40, testAccount2, DateTime.Now, "" );
+            testAccount.MakeTransaction(40, DateTime.Now, "", testAccount2 );
             
             var balance = testAccount2.Balance; //act
             
@@ -96,11 +96,11 @@ namespace Tests
         }
         
         [Test]
-        public void CanMakeTransferBiggerThanBalance()
+        public void CanNotMakeTransferBiggerThanBalance()
         {
             
             
-            Assert.Throws<Exception>(() =>  testAccount.TransferMoney(2340, testAccount2, DateTime.Now, "" ));
+            Assert.Throws<Exception>(() =>  testAccount.MakeTransaction(2340, DateTime.Now, "", testAccount2 ));
             
         }
     }

@@ -7,26 +7,26 @@ namespace Tests
 {
     public class BankAccountTest
     {
-        private BankAccount testAccount;
-        private BankAccount testAccount2;
+        private BankAccount _testAccount;
+        private BankAccount _testAccount2;
         [SetUp]
         public void Setup()
         {
-            testAccount = new BankAccount("citi", "209345", 49, new Person("tom", "3AddisonRD", 32, "e@gm.com"));
-            testAccount2 = new BankAccount("hdf", "202245", 20, new Person("alex", "3bunnST", 22, "a@gm.com"));
+            _testAccount = new BankAccount("citi", "209345", 49, new Person("tom", "3AddisonRD", new DateTime(1985, 07, 21),"e@gm.com"));
+            _testAccount2 = new BankAccount("hdf", "202245", 20, new Person("alex", "3bunnST", new DateTime(2000, 07, 21), "a@gm.com"));
         }
 
         [Test]
         public void CanCreateBankAccount()
         {//arrange act assert
-            Assert.IsNotNull(testAccount);
+            Assert.IsNotNull(_testAccount);
         }
         
         [Test]
         public void CanShowBalance()
         {
 
-            var balance = testAccount.Balance; //act
+            var balance = _testAccount.Balance; //act
 
             Assert.AreEqual(49, balance);
 
@@ -35,14 +35,14 @@ namespace Tests
         [Test]
         public void CannotCreateAccountWithNegativeBalance()
         {
-            Assert.Throws<Exception>(() => new BankAccount("citi", "209345", -1, new Person("tom", "3AddisonRD", 32, "e@gm.com")));
+            Assert.Throws<Exception>(() => new BankAccount("citi", "209345", -1, new Person("tom", "3AddisonRD", new DateTime(1985, 07, 21), "e@gm.com")));
             
         }
         
         [Test]
         public void CanCreateAccountWithBalanceZero()
         {
-            BankAccount testAccountWithZeroBalance = new BankAccount("citi", "209345", 0, new Person("tom", "3AddisonRD", 32, "e@gm.com"));
+            var testAccountWithZeroBalance = new BankAccount("citi", "209345", 0, new Person("tom", "3AddisonRD", new DateTime(1985, 07, 21), "e@gm.com"));
 
             var balance = testAccountWithZeroBalance.Balance; //act
 
@@ -53,9 +53,9 @@ namespace Tests
         [Test]
         public void CanMakeDeposit()
         {
-            testAccount.MakeTransaction(10, DateTime.Now, "");
+            _testAccount.MakeTransaction(10, DateTime.Now, "");
             
-            var balance = testAccount.Balance; //act
+            var balance = _testAccount.Balance; //act
             
             Assert.AreEqual(59, balance);
             
@@ -64,9 +64,9 @@ namespace Tests
         [Test]
         public void CanMakeWithdrawal()
         {
-            testAccount.MakeTransaction(-10, DateTime.Now, "");
+            _testAccount.MakeTransaction(-10, DateTime.Now, "");
             
-            var balance = testAccount.Balance; //act
+            var balance = _testAccount.Balance; //act
             
             Assert.AreEqual(39, balance);
             
@@ -76,9 +76,9 @@ namespace Tests
         [Test]
         public void CanMakeTransferAndUpdateSourceBalance()
         {
-            testAccount.MakeTransaction(40, DateTime.Now, "" , testAccount2 );
+            _testAccount.MakeTransaction(40, DateTime.Now, "" , _testAccount2 );
             
-            var balance = testAccount.Balance; //act
+            var balance = _testAccount.Balance; //act
 
             Assert.AreEqual(9, balance); 
 
@@ -87,9 +87,9 @@ namespace Tests
         [Test]
         public void CanMakeTransferAndUpdateTheReceiverBalance()
         {
-            testAccount.MakeTransaction(40, DateTime.Now, "", testAccount2 );
+            _testAccount.MakeTransaction(40, DateTime.Now, "", _testAccount2 );
             
-            var balance = testAccount2.Balance; //act
+            var balance = _testAccount2.Balance; //act
             
             Assert.AreEqual(60, balance);
             
@@ -100,7 +100,7 @@ namespace Tests
         {
             
             
-            Assert.Throws<Exception>(() =>  testAccount.MakeTransaction(2340, DateTime.Now, "", testAccount2 ));
+            Assert.Throws<Exception>(() =>  _testAccount.MakeTransaction(2340, DateTime.Now, "", _testAccount2 ));
             
         }
     }

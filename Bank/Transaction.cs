@@ -11,22 +11,15 @@ namespace Bank
 
         public string Note { get; }
 
-        public Transaction(TransactionType transactionType, int amount, DateTime transactionDate, string externalAccountNumber, string note)
+        public Transaction(TransactionType transactionType, int amount, DateTime transactionDate,
+            string externalAccountNumber, string note)
         {
             TransactionDate = transactionDate;
             Amount = amount;
             TransactionDate = transactionDate;
             ExternalAccountNumber = externalAccountNumber;
             Note = note;
+            TransactionType = transactionType;
         }
-
-       
-    }
-
-    public enum TransactionType
-    {
-        Deposit,
-        Withdrawal,
-        Transfer
     }
 }

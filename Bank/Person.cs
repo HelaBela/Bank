@@ -1,43 +1,36 @@
+using System;
+
 namespace Bank
 {
     public class Person
     {
         public string Name { get; set; }
         public string Address { get; set; }
-        public int Age { get; }
+
+        public DateTime DateOfBirth { get; }
 
         public string Email { get; set; }
 
-        public Person(string name, string address, int age, string email)
+        public int Age
+        {
+            get
+            {
+                var today = DateTime.Today;
+
+                var age = today.Year - DateOfBirth.Year;
+
+                if (DateOfBirth.AddYears(age) > today) age--;
+
+                return age;
+            }
+        }
+
+        public Person(string name, string address, DateTime dateOfBirth, string email)
         {
             Name = name;
             Address = address;
-            Age = age;
+            DateOfBirth = dateOfBirth;
             Email = email;
         }
-
-        
     }
 }
-
-/*get
-{
-int year;
-int age = this.Age;
-                
-System.DateTime moment = new System.DateTime(
-    2019);
-{
-    year = moment.Year;
-}
-
-if (year == year + 1)
-{
-                    
-    age++;
-
-}
-
-return age;
-}
-set { throw new System.NotImplementedException(); } */

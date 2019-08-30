@@ -13,12 +13,13 @@ namespace Bank
 
 
             var clientTwo = new Person("Alex", "4 BunnSt", new DateTime(1994, 11, 10), "a@fm.com");
-            var bankAccTwo = new BankAccount("west", "4567892", 30, clientTwo);
+            var bankAccTwo = new BankAccount("ANZ", "4567892", 30, clientTwo);
 
             bankAccTwo.MakeTransaction(20, DateTime.Now, "beer money", bankAcc);
+            bankAcc.MakeTransaction(20, new DateTime(2001, 09, 12),"something" );
 
-            Console.WriteLine(bankAcc.GenerateBankStatement());
-            Console.WriteLine(bankAccTwo.GenerateBankStatement());
+            Console.WriteLine(bankAcc.GenerateBankStatement(new DateTime(2013, 03, 03 ),new DateTime(2020, 03,03 ) ));
+            Console.WriteLine(bankAccTwo.GenerateBankStatement(new DateTime(2015, 03, 03 ),new DateTime(2016, 03,03 ) ));
         }
     }
 }

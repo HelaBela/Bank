@@ -5,13 +5,13 @@ namespace Bank
     public class Transaction
     {
         private TransactionType TransactionType { get; }
-        public int Amount { get; }
+        public double Amount { get; }
         public DateTime TransactionDate { get; }
         public string ExternalAccountNumber { get; }
 
         public string Note { get; }
 
-        public Transaction(TransactionType transactionType, int amount, DateTime transactionDate,
+        public Transaction(TransactionType transactionType, double amount, DateTime transactionDate,
             string externalAccountNumber, string note)
         {
             TransactionDate = transactionDate;
